@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #002339;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: white;
+    gap: 20px;
+}
+    
+h1:last-of-type{
+    color: rgb(145, 105, 30);
+    border-bottom: 2px solid rgb(145, 105, 30);
+    width: fit-content;
+    padding-bottom: 5px;
+}
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002339;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+
+}
+.display img {
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.display input {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button {
+    width: 300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(145, 105, 30);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.gen-btn:hover{
+    padding: 0 30px;
+}
+.gen-btn:hover img {
+    animation: img 1s ease infinite;
+    
+}
+
+@keyframes img {
+    0% {
+        transform: rotate(0);
+        
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+button img {
+    width: 30px;
+}
+
+@media (max-width: 400px){
+    button {
+        width: 200px;
+        padding: 0 10px;
+        margin: 0 auto;
+
+    }
+    button:hover{
+        padding: 0 15px;
+    }
+    
+}
+
+.more {
+    width: 150px;
+    
+}
+
+input[type="number"] {
+    width: 150px;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.more-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.more-div label {
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    display: none;
+}
+
+@media (max-width :550px){
+    .more-div {
+        display: flex;
+        width: 100%;
+    }
+    
+    .more {
+        width: 100px;
+        padding: 0;
+    }
+    
+    input[type="number"] {
+        width: 75px;
+        height: 100%;
+        padding: 20px 5px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+    
+    .more-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .more-div label {
+        font-size: 15px;
+    }
+    .error {
+        font-size: 15px;
+    }
+    
+}

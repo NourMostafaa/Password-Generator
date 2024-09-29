@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generate Password</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Generate A</h1>
+            <h1>Random Password</h1>
+        
+        <div class="display">
+            <input type="text" name="Password" id="password" placeholder="Password">
+            <img src="images/copy.png">    
+        </div>
+        <button class="gen-btn"><img src="images/generate.png">Generate Password</button>
+        <div class="more-div">
+            <button class="more"><img src="images/white-arrow.png" alt="">More</button>
+            <label for="length" class="hidden">Password Length :</label>
+            <input type="number" min="8" max="32" class="length hidden" value="8" >    
+        </div>
+        <p class="error">Password Length Must Be Between 8 And 32</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
